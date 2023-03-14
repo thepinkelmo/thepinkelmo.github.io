@@ -1,82 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Tic Tac Toe Game</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-      <h1 class="gameTitle">Tic Tac Toe</h1>
-      <div class="start-game">
-        <h2 class="text-light">Select Character</h1>
-        <div class="gameMode">
-          <div class="sets-options-chooses-disable" id="humvscomp">
-          <h2 class="btn" id="human">Human</h2>  
-          <h1 class="vs">vs</h1>
-          <h2 class="btn"  id="computer">Artificial Intelligence</h2>   
-          </div>   
-       </div>   
-      </div>
-      <div class="changeChar">
-      <h2 class="btn" id="1">X</h2> 
-      <h1 class="vs">vs</h1>
-      <h2 class="btn" id="2">O</h2>
-    </div> 
-      </div>
-      <div class="content">
-          <table class="table_overlay">
-          <tr>
-            <td id="square_1_text" class="text"></td>
-            <td id="square_2_text" class="text"></td>
-            <td id="square_3_text" class="text"></td>
-          </tr>
-          <tr>
-             <td id="square_4_text" class="text"></td>
-             <td id="square_5_text" class="text"></td>
-             <td id="square_6_text" class="text"></td>
-          </tr>
-          <tr>
-             <td id="square_7_text" class="text"></td>
-             <td id="square_8_text" class="text"></td>
-             <td id="square_9_text" class="text"></td>
-          </tr>
-        </table>
-      <div class="board">
-        <table>
-          <tr>
-            <td id="square_1"></td>
-       
-             <td id="square_2"></td>
-      
-             <td id="square_3"></td>
-          </tr>
-          <tr>
-             <td id="square_4"></td>
-             <td id="square_5"></td>
-             <td id="square_6"></td>
-          </tr>
-          <tr>
-             <td id="square_7"></td>
-             <td id="square_8"></td>
-             <td id="square_9"></td>
-          </tr>
-        </table> 
-      </div>
-        
-      
-      </div>
-      <div class="undo">
-        <h1 class="btn">«</h1>
-      </div>
-      <div id="myModal" class="modal animated fadeIn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
 
-        <div class="modal-content">
-          <div class="modal-body">
-          <p class="modal_text"></p>
-            <btn id="restartBtn">Play again!</btn>
-          </div>
-        </div>
-      
-      </div>   
-    <script src="game.js"></script>
-  </body>
+    <title>Photo Album</title>
+</head>
+<body>
+  
+    
+    <div><h1>My amazing photos!</h1></div>
+
+    <div id="contextMenu">
+        <div id="it1" class="item">Newtab</div>
+        <div id="it2" class="item">Increase Brightness</div>
+        <div id="it3" class="item">Reduce Resulution</div>
+        <div id="it4" class="item">Create Avatar</div>
+        <div id="it5" class="item">Duplicate Image</div><hr>
+        <div id="it6" class="item">Generate QR</div>
+        <div id="it7" class="item">Download image</div> 
+    </div>
+    <form class="inputCaption">
+        <input type="text" for="caption">
+        <button type="submit" id="submitCaption"></button>
+    </form>
+    <div id="container" class="container">
+        <div><img class="img-fluid" src="https://source.unsplash.com/TkdUF57nioQ/800x800" crossorigin="anonymous" alt="" id="1"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/vzD0k1YMdS8/800x800" crossorigin="anonymous" alt="" id="2"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/9HnW4qYFE0o/800x800" crossorigin="anonymous" alt="" id="3"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/5StsNsthTyc/800x800" crossorigin="anonymous" alt="" id="4"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/wvnXTvOg_WU/800x800" crossorigin="anonymous" alt="" id="5"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/FGy8UqebQS0/800x800" crossorigin="anonymous" alt="" id="6"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/Gu7of0dUPKI/800x800" crossorigin="anonymous" alt="" id="7"></div>
+        
+        <div><img class="img-fluid" src="https://source.unsplash.com/0zlJK2AxLBc/800x800" crossorigin="anonymous" alt="" id="8"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/cZa_tJuGMQU/800x800" crossorigin="anonymous" alt="" id="9"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/6TXtIhu1k4A/800x800" crossorigin="anonymous" alt="" id="10"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/-qEV_HSpmw0/800x800" crossorigin="anonymous" alt="" id="11"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/8gmpq00FsTc/800x800" crossorigin="anonymous" alt="" id="12"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/jr0GS51wwyE/800x800" crossorigin="anonymous" alt="" id="13"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/VZrsM50VsWU/800x800" crossorigin="anonymous" alt="" id="14"></div>
+        
+        <div><img class="img-fluid" src="https://source.unsplash.com/vTxlVs4SGrM/800x800" crossorigin="anonymous" alt="" id="15"></div>
+        <div><img class="img-fluid" src="https://source.unsplash.com/f6hE-8JvKLg/800x800" crossorigin="anonymous" alt="" id="16"></div>
+    </div>
+    
+    <footer>
+            <script src="script.js"></script>
+            <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+            <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    </footer>
+
+</body>
 </html>
